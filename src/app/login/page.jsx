@@ -1,13 +1,14 @@
 "Use client";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Login() { 
     return(
         <>
             <Navbar/>
-            <div className="flex justify-center mx-6 md:mx-auto max-w-[800px] h-screen">
+            <div className="flex justify-center mx-6 md:mx-auto max-w-[800px] ">
                 <div className="mt-20">
-                    <p className="text-4xl font-sans font-bold text-center">Welcome back</p>
+                    <p className="text-4xl font-sans text-center">Welcome back</p>
                     <form className="flex flex-col md:flex-row items-center space-y-3 mt-7 max-w-[600px]" method="post">
                         <input
                             type="text"
@@ -21,8 +22,7 @@ export default function Login() {
                 </div>
                 
             </div>
-
-
+            <Footer/>
         </>
     )
 }

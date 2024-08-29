@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export default function Home() {
 
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <div>
+      <div className="h-screen">
         <form onSubmit={handleSearch} className="flex justify-center items-center mx-auto max-w-[800px] px-6 mt-8">
           <input
             type="text"
